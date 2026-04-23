@@ -1,0 +1,44 @@
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: #333;
+  color: white;
+  border-radius: 5px;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.all-songs, .song-card, .playlist {
+  flex: 1;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.song-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Light Theme */
+[data-theme="light"] {
+  background: white;
+  color: black;
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+  background: #121212;
+  color: white;
+}
